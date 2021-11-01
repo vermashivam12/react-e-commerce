@@ -1,11 +1,15 @@
 import './header.css'
-import React, { useState } from 'react'
 import Input from '../input/Input'
 import Button from '../button/Button'
+import React, { useState } from 'react'
 
 let Header = () => {
 
     const [query, setQuery] = useState('')
+
+    let searchProducts = () => {
+        alert(`Searched query - ${query}`)
+    }
 
     return (
         <div>
@@ -13,7 +17,7 @@ let Header = () => {
                 <div>
                     <span className="heading">E-Commerce</span>
                     <Input type="text" value={query} onChange={setQuery} className="search-field" placeholder="Enter Category / Products" />
-                    <Button className="search-btn" title="Search" />
+                    <Button searchProducts={searchProducts} className="search-btn" title="Search" />
                 </div>
             </div>
         </div>
