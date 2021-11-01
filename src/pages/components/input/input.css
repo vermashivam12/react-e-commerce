@@ -1,0 +1,8 @@
+.search-field {
+    width: 60%;
+    font-size: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px 4px 4px 4px;
+    padding: 6px;
+    margin-right: 10px;
+}

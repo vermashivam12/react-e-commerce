@@ -1,0 +1,13 @@
+.head-wrapper {
+    margin: auto;
+    padding: 20px;
+    background-color: tan;
+}
+
+.heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    padding-right: 50px;
+    color: #A16B4C;
+    font-weight: bolder;
+}
