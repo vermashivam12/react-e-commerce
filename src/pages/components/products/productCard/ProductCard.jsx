@@ -7,12 +7,20 @@ let ProductList = (props) => {
 
     return (
         <>
-            <div className="card col-md-4">
-                <img alt={product.id} className='card-img-top' src={product.image} />
-                <div className="card-body">
-                    <h5 className="card-title">{product.title}</h5>
-                    <p className="card-text">{product.description}</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+            <div className="col-md-6 col-lg-4 col-sm-12 mt-2">
+                <div className="card h-100">
+                    <img
+                        width={300}
+                        height={500}
+                        alt={product.id}
+                        className="card-img-top"
+                        src={product.image}
+                    />
+                    <div className="card-body">
+                        <h5 className="card-title">{product.title}</h5>
+                        <p className="card-text text-justify">{product.description}</p>
+                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    </div>
                 </div>
             </div>
         </>

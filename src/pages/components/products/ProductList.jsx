@@ -4,11 +4,11 @@ import ProductCard from './productCard/ProductCard'
 
 let ProductList = () => {
 
-    const { products } = useSelector(state => state.products)
+    const { products, searchQuery } = useSelector(state => state.products)
 
     return (
         <div>
-            <h3>Products</h3>
+            <h3>{searchQuery ? `You\'re looking for - ${searchQuery}` : 'Products'}</h3>
             {products && products.length ?
                 <div className="row m-2">
                     {products.map(product => (
