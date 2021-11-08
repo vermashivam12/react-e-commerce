@@ -7,8 +7,8 @@ let ProductList = () => {
     const { products, searchQuery } = useSelector(state => state.products)
 
     return (
-        <div>
-            <h3>{searchQuery ? `You\'re looking for - ${searchQuery}` : 'Products'}</h3>
+        <div className="m-3">
+            <h3>{searchQuery ? `You're looking for - ${searchQuery}` : 'Products'}</h3>
             {products && products.length ?
                 <div className="row m-2">
                     {products.map(product => (

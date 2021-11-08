@@ -11,15 +11,15 @@ let ProductList = (props) => {
                 <div className="card h-100">
                     <img
                         width={300}
-                        height={500}
+                        height={450}
                         alt={product.id}
                         className="card-img-top"
                         src={product.image}
                     />
                     <div className="card-body">
                         <h5 className="card-title">{product.title}</h5>
-                        <p className="card-text text-justify">{product.description}</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                        <p className="card-text text-justify">{product.description.length <= 120 ? product.description : `${product.description.slice(0, 120)}...`}</p>
+                        <a href="google.com" className="btn btn-primary">View Details</a>
                     </div>
                 </div>
             </div>
